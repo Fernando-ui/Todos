@@ -10,6 +10,8 @@ export class TodoList{
     }
     eliminarTodo(id){
 
+        this.todos = this.todos.filter(todo => todo.id != id)
+
     }
 
     marcarCompletado(id){
