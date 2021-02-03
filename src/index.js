@@ -14,3 +14,6 @@ export const todoList = new TodoList();
 
 // localStorage.setItem('mi-key', 'Hola-Mundo');
 todoList.todos.forEach(todo => crearTodoHtml(todo));
+
+// const newTodo = new Todo('Aprender algo');
+// todoList.nuevoTodo(newTodo);
