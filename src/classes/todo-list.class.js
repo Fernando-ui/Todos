@@ -42,8 +42,8 @@ export class TodoList{
     cargarLocalStorage(){
 
         this.todo = (localStorage.getItem('todo')) ?this.todos = JSON.parse(localStorage.getItem('todo')) :[];
-
-        this.todos = this.todos.map(obj => Todo.fromJson(obj));
+        
+        this.todos = this.todos.map(Todo.fromJson);
 
     }
 }
